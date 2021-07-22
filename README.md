@@ -1,4 +1,28 @@
 # Backup files to telegram
+The program is designed for backup copies (RK) of small files and directories. 
+PK files are sent to one or several telegram chats, which are specified in the configuration file. 
+
+- RK catalogs 
+
+If a catalog is specified in the configuration file, then it will be placed in a zip archive (LZMA) before being sent to telegrams. 
+After archiving, the hash (sha256) the sum of the directory archive will be calculated, this hash sum will be used in the future to determine the changes in the directory. For RK directories, you can specify the filters "include": "pattern" or "exclude": "pattern", regular expressions (regexp) 
+ - PK files
+of RK files are used as pattern. At startup, the program calculates the hash sum of the file if it differs from the one written in configuration file, the file is considered changed and must be sent to telegrams to the corresponding chats. 
+If the "archive": "true" option is specified in the configuration file, the files will be archived before sending.
+
+Run / Run: python ./run.py ./mybkp.conf 
+
+Recommended for use with the task scheduler.
+
+
+
+
+
+
+
+
+
+# Backup files to telegram
 Программа предназначена для резервной копии (РК) не больших файлов и каталогов.
 Файлы РК пересылаются в один или несколько чатов телеграм, которые указаны в файле конфигурации.
 
