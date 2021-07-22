@@ -1,3 +1,17 @@
+# Backup to telegram as free cloud backup service
+the way I want to do it is:
+create fat like catalog of all files on client computer
+send all files to telegram and create online catalog of existing files
+the catalog would enable syncs of all files
+
+## Main initiative is to have one media library synced between many clients
+later on I think to make it into a full cloud backup solution
+
+## additional ideas:
+
+
+
+from here it is the forked readme + trunslation
 # Backup files to telegram
 The program is designed for backup copies (RK) of small files and directories. 
 PK files are sent to one or several telegram chats, which are specified in the configuration file. 
